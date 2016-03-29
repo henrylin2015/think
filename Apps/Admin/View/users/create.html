@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="__PUBLIC__/Admin/plugins/css/style.css" rel="stylesheet" type="text/css">
+    <script language="javascript" src="__PUBLIC__/Admin/plugins/js/clientSideApp.js"></script>
+    <SCRIPT language=JavaScript type=text/JavaScript>
+     function windowOpen(theURL,winName,features,width,hight,scrollbars,top,left) 
+     {
+       var parameter="top="+top+",left="+left+",width="+width+",height="+hight;
+       if(scrollbars=="no")
+       {parameter+=",scrollbars=no";}
+       else
+       {parameter+=",scrollbars=yes";}
+       window.open(theURL,winName,parameter);
+     }
+    </SCRIPT>
+  </head>
+  <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <form action="__SELF__" method="post">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="25" align="center" valign="bottom" class="td06">
+            <table width="98%" border="0" cellspacing="3" cellpadding="0">
+              <tr>
+                <td width="15"><img src="__PUBLIC__/Admin/plugins/images/index_32.gif" width="9" height="9"></td>
+                <td valign="bottom" class="title">新增新用户</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <table align="center" width="95%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="90" height="24" class="td_form01">用户名:</td>
+          <td nowrap class=td_form02><input type="text" name="username"></td>
+        </tr>
+        <tr>
+          <td width="90" class="td_form01">真实姓名：</td>
+          <td nowrap class=td_form02><input type="text" name="nickname"></td>
+        </tr>
+        <tr>
+          <td height="24" class="td_form01">用户密码：</td>
+          <td nowrap class=td_form02><input type="password" name="password"></td>
+        </tr>
+        <tr>
+          <td class="td_form01">邮箱：</td>
+          <td nowrap class=td_form02><input type="text" name="email"></td>
+        </tr>
+        <tr>
+          <td width="90" height="24" class="td_form01">公司名称：</td>
+          <td nowrap class=td_form02>
+            <select name="companyid">
+              <option value="1">百度</option>
+              <option value="2">上海国际</option>
+              <option value="3">迅腾国际</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td align="center">
+            <input type="submit" class="buttonface" value="提交 "">
+            <input type="submit" class="buttonface" value="重置" ></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
